@@ -60,7 +60,6 @@ export class ContactFormComponent implements OnInit {
   }
 
   isFieldValid(field: string) {
-    console.log(this.form.get(field))
     return !this.form.get(field).valid && this.form.get(field).touched;
   }
 
